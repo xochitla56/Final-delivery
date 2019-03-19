@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+<title>Ace in the Hole Multisport Event Contact Us</title>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+<header>
+    <div class="logo">Ace in the Hole<br> Multisport Event</div>
+    <div class="menu-toggle"></div>
+    <nav>
+    <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="registration.html" >Register</a></li>
+        <li><a href="contact1.html" class="active">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <div class="clearfix"></div>
+    </header>
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript">
+     $(document).ready(function(){
+         $('.menu-toggle').click(function(){
+             $('.menu-toggle').toggleClass('active')
+             $('nav').toggleClass('active')
+         })
+     })
+    </script>
+    
+    
+    <h2>We're here to help and answer any questions you might have.<br>We look forward to hearing from you.</h2>
+        
+     <form name="contacto"  action="contact_form.php" id="inquiryForm" method="post">
+         
+    <h1>Contact Us</h1>
+        
+        <label for="myName">Name:</label>
+        <input type="text" name="nombre" id="myName" value="" alt="if you fill this field out then your email will not be sent" required>
+        <label for="myEmail">E-mail:</label>
+        <input type="text" name="correo" id="myEmail"required>
+        <label for="choices">*I'm here as:</label>
+        <select size="1" name="choices" id="choice" required>
+            <option>Pick one</option>
+            <option value="atleta">Athlete</option>
+            <option value="voluntario">Volunteer</option>
+            <option value="interested">Interested Party</option>
+        </select><br><br>
+        <label for="myQuestion">Question:</label>
+        <textarea name="question" placeholder="comment or question?"></textarea>
+        <input id="button" type="submit" value="Submit" name="submit">
+    </form>
+<br>
+        <br>
+   </main>
+ <footer>
+        <div class="locations">
+            <h3>Ace in the Hole Multisport Event</h3>
+            <h4>&copy; Ace in the Hole Multisport Event</h4>
+            </div>
+            
+            <div class="hours">
+            <h3>Location</h3>
+            <h4>123 NW Everett, Portland OR</h4>
+            </div>
+        </footer>
+</body>
+</html>
